@@ -1,0 +1,28 @@
+<div class="container bg-dark mt-4 p-4 rounded rounded-xl shadow" style="max-width: 450px;">
+  <div class="row">
+    <h2 class="text-center text-white fw-semibold">E1 - Calculadora</h2>
+  </div>
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-3">
+      <input type="number" [(ngModel)]="num1" class="p-1 form-control">
+    </div>
+    
+    <div class="col-3">
+      <input type="number" [(ngModel)]="num2" class="p-1 form-control">
+    </div>
+  </div>
+
+  <div class="row m-2">
+      <button type="button" (click)="Suma()" class="btn btn-info m-1">Sumar</button>
+      <button type="button" (click)="Promedio()" class="btn btn-info m-1">Promediar</button>  
+  </div>
+  
+  <div class="row">
+    <div class="col d-flex justify-content-center">
+      <label class="fw-bold fs-4 text-white">RESPUESTA: {{respuesta}}</label>
+    </div>
+  </div>
+  
+  
+</div>  

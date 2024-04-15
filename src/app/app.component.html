@@ -1,11 +1,5 @@
-
-<h1>Ejercicios - Guia Leandro - Labo IV</h1>
-<br>
-<h2>Ej.1 - Calculadora</h2>
-<input type="number" [(ngModel)]="num1">
-<input type="number" [(ngModel)]="num2">
-<br>
-<button type="button"(click)="Suma()">Sumar</button>
-<button type="button"(click)="Promedio()">Promediar</button>
-<br><label>Respuesta: {{respuesta}}</label>
+<div class="container-fluid bg-dark p-4 shadow">
+  <h1 class="fw-semibold text-end text-white">Ejercicios - Guia Leandro - Labo IV</h1>  
+</div>
+<app-calculadora></app-calculadora>
 <router-outlet />
